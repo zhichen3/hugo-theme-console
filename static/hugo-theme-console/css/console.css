@@ -212,6 +212,11 @@ figure {
     );
 }
 
+.image-grid img {
+    max-width: 400px;
+    height: auto;
+}
+
 .terminal-prompt::after {
     -webkit-animation: cursor 1s infinite;
     animation: cursor 1s infinite;
