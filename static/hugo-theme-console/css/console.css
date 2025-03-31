@@ -213,7 +213,8 @@ figure {
 }
 
 .image-grid img {
-    max-width: 400px;
+    max-width: 350px;
+    max-height: 350px;
     height: auto;
 }
 
