@@ -202,8 +202,6 @@ figure {
 
 .image-grid {
     display: grid;
-    grid-template-rows: auto;
-    display: grid;
     grid-gap: 1em;
     grid-template-rows: auto;
     grid-template-columns: repeat(
@@ -220,12 +218,22 @@ figure {
     display: flex;
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
+    transition: transform 0.3s ease-in-out; /* Transition for hover effect */
+}
+
+.image-grid a:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .image-grid img {
     max-width: 100%; /* Ensure the image can shrink to fit the container */
     max-height: 100%; /* Ensure the image can shrink to fit the container */
     object-fit: contain; /* Ensure the image maintains aspect ratio and fits inside */
+    transition: opacity 0.3s ease-in-out; /* Optional: smooth transition for image opacity */
+}
+
+.image-grid a:hover img {
+    opacity: 0.9; /* Optional: dim the image on hover for a visual effect */
 }
 
 .terminal-prompt::after {
