@@ -246,12 +246,10 @@ figure {
     content: none;
 }
 
-/* custom html attribute to do file copy using ox-hugo reference */
+/* custom html attribute to do file copy using ox-hugo reference
+ Basically stops image from showing up*/
 .resource-copy {
   display: none !important;
-  visibility: hidden;
-  position: absolute;
-  left: -9999px;
 }
 
 .gallery-image {
