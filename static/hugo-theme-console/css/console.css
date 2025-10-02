@@ -246,6 +246,14 @@ figure {
     content: none;
 }
 
+/* custom html attribute to do file copy using ox-hugo reference */
+.resource-copy {
+  display: none !important;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
 .gallery-image {
     margin-top: 10px;
     margin-bottom: 10px;
