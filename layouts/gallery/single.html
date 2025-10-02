@@ -3,17 +3,17 @@
 
 {{ if .Params.image }}
     {{ $image := .Page.Resources.GetMatch .Params.image }}
-
-    {{ if $image }}
-        {{ if gt $image.Width 1000 }}
-            {{ $thumb := $image.Resize "1000x" }}
-            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive gallery-image">
-        {{ else }}
-            <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="img-responsive gallery-image">
-        {{ end }}
-    {{ else }}
-        <img src="{{ relURL .Params.image }}" alt="{{ .Title }}" class="img-responsive gallery-image" style="max-width: 1000px; height: auto;">
-    {{ end }}
+    <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="img-responsive gallery-image">
+    <!-- {{ if $image }} -->
+    <!--     {{ if gt $image.Width 1000 }} -->
+    <!--         {{ $thumb := $image.Resize "1000x" }} -->
+    <!--         <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive gallery-image"> -->
+    <!--     {{ else }} -->
+    <!--         <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="img-responsive gallery-image"> -->
+    <!--     {{ end }} -->
+    <!-- {{ else }} -->
+    <!--     <img src="{{ relURL .Params.image }}" alt="{{ .Title }}" class="img-responsive gallery-image" style="max-width: 1000px; height: auto;"> -->
+    <!-- {{ end }} -->
 {{ end }}
 
 {{ .Content }}
