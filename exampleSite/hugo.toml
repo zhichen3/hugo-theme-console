@@ -3,13 +3,30 @@ title = "console-demo"
 theme = "hugo-theme-console"
 languageCode = "en-us"
 
+# For math
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+        unsafe = true  # This to allow embed videos
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true  # This for math
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+
 [params]
   # Cutting off the page title to two chars for mobile (console-demo -> co)
   titleCutting = true
 
   # Set the animation style -- https://animate.style/
   # To disable animations, please remove or comment animationStyle parameter
-  animateStyle = "animated zoomIn fast" 
+  animateStyle = "animated zoomIn fast"
 
   [[params.navlinks]]
   name = "about/"
@@ -18,7 +35,7 @@ languageCode = "en-us"
   [[params.navlinks]]
   name = "posts/"
   url = "posts/"
-  
+
   [[params.navlinks]]
   name = "photos/"
   url = "photos/"
