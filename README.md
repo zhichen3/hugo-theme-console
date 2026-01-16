@@ -12,7 +12,7 @@ Theme is based on a modern and minimal [Terminal CSS](https://terminalcss.xyz/) 
 - **Photo Gallery Support**: Built-in gallery functionality for photo collections
 - **Blog Ready**: Full support for blog posts with metadata
 - **Easy Customization**: Simple configuration and extensible design
-- **Hugo v0.146.0+ Compatible**: Updated for the latest Hugo template system 
+- **Hugo v0.146.0+ Compatible**: Updated for the latest Hugo template system
 
 ![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)
 
@@ -29,7 +29,7 @@ From the root of your Hugo site, clone the theme into `themes/hugo-theme-console
 ```bash
 $ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
 ```
-    
+
 See the [Hugo documentation](https://gohugo.io/hugo-modules/theme-components/) for more information.
 
 ### Adding theme as a Hugo module
@@ -107,12 +107,23 @@ exampleSite
 
 Copy at least the `hugo.toml` in the root directory of your website. Overwrite the existing config file if necessary.
 
+To add new sections on the top, edit `hugo.toml` to add new `navlinks`.
+
+```
+  [[params.navlinks]]
+  name = "new_sec"
+  url = "new_sec/"
+```
+
+Typically you also want to customize the homepage, do it by editting `index.html` by copying it over to `layouts/`
+in the root directory of your website.
+
 ### Development Server
 
 Hugo includes a development server, so you can view your changes as you go—very handy. Spin it up with the following command:
 
 ```bash
-hugo serve
+hugo server
 ```
 
 Now you can go to [http://localhost:1313](http://localhost:1313) and the theme should be visible.
