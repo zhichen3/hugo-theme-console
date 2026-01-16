@@ -107,14 +107,6 @@ exampleSite
 
 Copy at least the `hugo.toml` in the root directory of your website. Overwrite the existing config file if necessary.
 
-To add new sections on the top, edit `hugo.toml` to add new `navlinks`.
-
-```
-  [[params.navlinks]]
-  name = "new_sec"
-  url = "new_sec/"
-```
-
 Typically you also want to customize the homepage, do it by editting `index.html` by copying it over to `layouts/`
 in the root directory of your website.
 
