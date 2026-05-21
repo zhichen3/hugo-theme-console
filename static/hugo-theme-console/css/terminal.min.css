@@ -395,12 +395,13 @@ ol.terminal-toc li a:hover {
   color:var(--invert-font-color)
 }
 hr {
-  position:relative;
-  overflow:hidden;
-  margin:calc(var(--global-space) * 4)0;
-  border:0;
-  border-bottom:1px dashed var(--secondary-color)
+  text-align: center;
+  border: 0;
+  margin: 2rem 0;
+
+  &:before { content: '//////////' }
 }
+
 p {
   margin:0 0 var(--global-line-height);
   color:var(--font-color)
