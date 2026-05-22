@@ -36,14 +36,14 @@
     --mono-font-stack: "JetBrains Mono", monospace;
     --font-stack: "JetBrains Mono", monospace;
     --global-line-height: 1.6em;
-    --page-width: 850px;
+    --page-width: 750px;
     --display-h1-decoration: 1;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
 	--background-color: #222225;
-	--page-width: 850px;
+	--page-width: 750px;
 	--font-color: #e8e9ed;
 	--invert-font-color: #222225;
 	--secondary-color: #a3abba;
@@ -70,7 +70,7 @@
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 750px) {
     :root {
         --global-font-size: 14px;
         --global-font-color: #444;
@@ -184,8 +184,8 @@ strong {
 figure {
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .footer {
@@ -208,8 +208,8 @@ figure {
 
 .image-grid a {
     display: block; /* Make the link block-level to control the image container */
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     background-color: white; /* Background color for whitespace */
     display: flex;
     justify-content: center; /* Center the image horizontally */
@@ -276,7 +276,7 @@ figure {
     padding-top: 0;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 750px) {
     .site-name {
         width: 2ch;
         overflow: hidden;
