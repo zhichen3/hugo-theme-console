@@ -2,7 +2,7 @@
 
 A minimal and responsive Hugo theme inspired by the system console, crafted for optimal performance with an average page load time of under one second.
 
-Theme is based on a modern and minimal [Terminal CSS](https://terminalcss.xyz/) framework.
+The theme is based on a modern and minimal [Terminal CSS](https://terminalcss.xyz/) framework.
 
 ## Features
 
@@ -27,7 +27,7 @@ Theme is based on a modern and minimal [Terminal CSS](https://terminalcss.xyz/) 
 From the root of your Hugo site, clone the theme into `themes/hugo-theme-console` by running:
 
 ```bash
-$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
+$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git themes/hugo-theme-console
 ```
 
 See the [Hugo documentation](https://gohugo.io/hugo-modules/theme-components/) for more information.
@@ -41,7 +41,7 @@ $ hugo mod init github.com/my-username/my-new-site
 
 ```
 
-Next declare the `Console` theme module as a dependency for your site.
+Next, declare the `Console` theme module as a dependency for your site.
 
 ```bash
 $ hugo mod get github.com/mrmierzejewski/hugo-theme-console
@@ -118,7 +118,7 @@ Hugo includes a development server, so you can view your changes as you go—ver
 hugo server
 ```
 
-Now you can go to [http://localhost:1313](http://localhost:1313) and the theme should be visible.
+Now you can go to [http://localhost:1313](http://localhost:1313), and the theme should be visible.
 
 ### Building for Production
 
@@ -144,4 +144,4 @@ This theme has been updated to be compatible with Hugo v0.146.0 and the new temp
 
 ## License
 
-Copyright &copy; 2024 [Marcin Mierzejewski](https://mrmierzejewski.com/). This theme is released under the [MIT License](https://github.com/panr/hugo-theme-terminal/blob/master/LICENSE.md).
+Copyright &copy; 2026 [Marcin Mierzejewski](https://mrmierzejewski.com/). This theme is released under the [MIT License](https://github.com/panr/hugo-theme-terminal/blob/master/LICENSE.md).
