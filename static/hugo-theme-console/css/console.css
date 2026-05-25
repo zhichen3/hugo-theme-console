@@ -258,6 +258,26 @@ figure {
     width: 80%;
 }
 
+.social-icons {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.social-icons a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.15s ease-in-out; /* Transition for hover effect */
+}
+
+.social-icons a:hover {
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    transform: scale(1.15); /* Slight zoom on hover */
+}
+
 .posts-list {
     position: relative;
     padding-left: 130px;
