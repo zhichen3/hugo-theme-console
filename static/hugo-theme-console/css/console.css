@@ -125,6 +125,59 @@ h1 {
     margin-bottom: 150px;
 }
 
+h1::after {
+  content:"====================================================================================================";
+  position:absolute;
+  bottom:5px;
+  left:0;
+  display:var(--display-h1-decoration)
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Match the width of the heading */
+    border-bottom: 2px solid var(--font-color); /* Solid line */
+}
+
+h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Match the width of the heading */
+    border-bottom: 2px dashed var(--font-color); /* Dashed line */
+}
+
+h4::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Match the width of the heading */
+    border-bottom: 2px dotted var(--font-color); /* Dotted line */
+}
+
+h5::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Match the width of the heading */
+    border-bottom: 2px groove var(--font-color); /* Groove line */
+}
+
+h6::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Match the width of the heading */
+    border-bottom: 2px outset var(--font-color); /* Outset line */
+}
+
 
 hr {
   text-align: center;

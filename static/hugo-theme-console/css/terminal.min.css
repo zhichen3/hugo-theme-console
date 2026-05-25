@@ -104,13 +104,6 @@ h1,
   overflow:hidden;
   font-weight:600
 }
-h1::after {
-  content:"====================================================================================================";
-  position:absolute;
-  bottom:5px;
-  left:0;
-  display:var(--display-h1-decoration)
-}
 h1+*,
 .logo+* {
   margin-top:0
@@ -125,51 +118,6 @@ h6 {
   font-weight:600;
   display: inline-block; /* Adjust width based on content */
   padding-bottom: 2px; /* Space between text and line */
-}
-
-h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; /* Match the width of the heading */
-    border-bottom: 2px solid var(--background-color); /* Solid line */
-}
-
-h3::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; /* Match the width of the heading */
-    border-bottom: 2px dashed var(--background-color); /* Dashed line */
-}
-
-h4::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; /* Match the width of the heading */
-    border-bottom: 2px dotted var(--background-color); /* Dotted line */
-}
-
-h5::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; /* Match the width of the heading */
-    border-bottom: 2px groove var(--background-color); /* Groove line */
-}
-
-h6::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; /* Match the width of the heading */
-    border-bottom: 2px outset var(--background-color); /* Outset line */
 }
 
 blockquote {
