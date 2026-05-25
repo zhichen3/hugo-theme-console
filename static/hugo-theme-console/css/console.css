@@ -363,6 +363,7 @@ figure {
     padding-top: 0;
 }
 
+/* This is for small screen devices, e.g. phones */
 @media only screen and (max-width: 750px) {
     .site-name {
         width: 2ch;
@@ -400,7 +401,7 @@ figure {
 
     .posts-list {
         position: relative;
-        padding-left: 0;
+        padding-left: 130 px;
         top: 0;
     }
 
