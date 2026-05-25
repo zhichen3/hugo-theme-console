@@ -255,7 +255,8 @@ figure {
 .gallery-image {
     margin-top: 10px;
     margin-bottom: 10px;
-    max-height: 800px; /* Keep maximum height to be 800px */
+    /* max-height: 800px; /\* Keep maximum height to be 800px *\/ */
+    max-width: 80%;
 }
 
 .posts-list {
