@@ -189,7 +189,6 @@ blockquote::after {
 }
 code {
   font-weight:inherit;
-  background-color:var(--code-bg-color);
   font-family:var(--mono-font-stack)
 }
 code::after,
@@ -206,7 +205,6 @@ pre {
   word-break:break-all;
   word-wrap:break-word;
   color:var(--secondary-color);
-  background-color:var(--block-background-color);
   border:1px solid var(--secondary-color);
   padding:var(--global-space);
   white-space:pre-wrap;
@@ -220,7 +218,6 @@ pre code {
   display:inline-block;
   min-width:100%;
   font-family:var(--mono-font-stack);
-  background-color:var(--block-background-color)
 }
 .terminal blockquote,
 .terminal h1,
