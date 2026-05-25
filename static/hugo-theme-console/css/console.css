@@ -125,6 +125,16 @@ h1 {
     margin-bottom: 150px;
 }
 
+
+hr {
+  text-align: center;
+  border: 0;
+  margin: 2rem 0;
+
+  &:before { content: '//////////' }
+}
+
+
 .content-column-content p,
 .content-column-content li {
     color: #666;

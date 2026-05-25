@@ -133,7 +133,7 @@ h2::after {
     bottom: 0;
     left: 0;
     width: 100%; /* Match the width of the heading */
-    border-bottom: 2px solid black; /* Solid line */
+    border-bottom: 2px solid var(--background-color); /* Solid line */
 }
 
 h3::after {
@@ -142,7 +142,7 @@ h3::after {
     bottom: 0;
     left: 0;
     width: 100%; /* Match the width of the heading */
-    border-bottom: 2px dashed black; /* Dashed line */
+    border-bottom: 2px dashed var(--background-color); /* Dashed line */
 }
 
 h4::after {
@@ -151,7 +151,7 @@ h4::after {
     bottom: 0;
     left: 0;
     width: 100%; /* Match the width of the heading */
-    border-bottom: 2px dotted black; /* Dotted line */
+    border-bottom: 2px dotted var(--background-color); /* Dotted line */
 }
 
 h5::after {
@@ -160,7 +160,7 @@ h5::after {
     bottom: 0;
     left: 0;
     width: 100%; /* Match the width of the heading */
-    border-bottom: 2px groove black; /* Groove line */
+    border-bottom: 2px groove var(--background-color); /* Groove line */
 }
 
 h6::after {
@@ -169,7 +169,7 @@ h6::after {
     bottom: 0;
     left: 0;
     width: 100%; /* Match the width of the heading */
-    border-bottom: 2px outset black; /* Outset line */
+    border-bottom: 2px outset var(--background-color); /* Outset line */
 }
 
 blockquote {
@@ -187,10 +187,10 @@ blockquote::after {
   line-height:var(--global-line-height);
   color:#9ca2ab
 }
+
 code {
   font-weight:inherit;
   font-family:var(--mono-font-stack)
-  background-color:var(--code-bg-color);
 }
 code::after,
 code::before {
@@ -206,7 +206,6 @@ pre {
   word-break:break-all;
   word-wrap:break-word;
   color:var(--secondary-color);
-  background-color:var(--block-background-color);
   border:1px solid var(--secondary-color);
   padding:var(--global-space);
   white-space:pre-wrap;
@@ -220,8 +219,8 @@ pre code {
   display:inline-block;
   min-width:100%;
   font-family:var(--mono-font-stack);
-  background-color:var(--block-background-color)
 }
+
 .terminal blockquote,
 .terminal h1,
 .terminal h2,
@@ -393,13 +392,6 @@ ol.terminal-toc li::before {
 ol.terminal-toc li a:hover {
   background:var(--primary-color);
   color:var(--invert-font-color)
-}
-hr {
-  text-align: center;
-  border: 0;
-  margin: 2rem 0;
-
-  &:before { content: '//////////' }
 }
 
 p {
