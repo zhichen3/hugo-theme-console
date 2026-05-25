@@ -252,6 +252,7 @@ figure {
     margin-top: 10px;
     margin-bottom: 10px;
     /* max-height: 600px; /\* Keep maximum height to be 600px *\/ */
+    height: auto;
     max-width: 80%;
 }
 
