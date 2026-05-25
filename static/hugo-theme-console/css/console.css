@@ -330,7 +330,7 @@ figure {
 .social-icons a {
     font-size: 1.4rem;
     text-decoration: none;
-    color: black;
+    color: var(--font-color);
     transition: transform 0.15s ease-in-out; /* Transition for hover effect */
 }
 
