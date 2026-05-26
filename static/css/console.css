@@ -363,6 +363,141 @@ figure {
     padding-top: 0;
 }
 
+/* Code language badges -- stolen from ARCHIE theme*/
+.highlight pre {
+    position: relative;
+    padding-top: 1.75rem;  /* ← makes room for the badge */
+}
+
+.highlight pre code[class*="language-"] {
+  -webkit-overflow-scrolling: touch;
+}
+
+.highlight pre code[class*="language-"]::before {
+    background: #000000;
+    border-radius: 0 0 0.25rem 0.25rem;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    padding: 0.1rem 0.5rem;
+    position: absolute;
+    /* Fallback for older browsers */
+    right: 1rem;
+    top: 0;
+    /* Modern logical properties */
+    inset-inline-end: 1rem;
+    inset-block-start: 0;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+/* Language-specific badges */
+.highlight pre code[class*="language-js"]::before,
+.highlight pre code[class="language-javascript"]::before {
+  content: "js";
+  background: #f7df1e;
+  color: #000000;
+}
+
+.highlight pre code[class*="language-ts"]::before {
+  content: "ts";
+  background: #3178c6;
+  color: #ffffff;
+}
+
+.highlight pre code[class*="language-py"]::before,
+.highlight pre code[class*="language-python"]::before {
+  content: "python";
+  background: #3776ab;
+  color: #ffffff;
+}
+
+.highlight pre code[class*="language-go"]::before {
+  content: "go";
+  background: #00add8;
+  color: #ffffff;
+}
+
+.highlight pre code[class*="language-css"]::before {
+  content: "css";
+  background: #1572b6;
+  color: #ffffff;
+}
+
+.highlight pre code[class*="language-html"]::before {
+  content: "html";
+  background: #e34f26;
+  color: #ffffff;
+}
+
+.highlight pre code[class*="language-json"]::before {
+  content: "json";
+  background: #000000;
+  color: #ffffff;
+}
+
+.highlight pre code[class*="language-yml"]::before,
+.highlight pre code[class*="language-yaml"]::before {
+  content: "yaml";
+  background: #cc1018;
+  color: #ffffff;
+}
+
+.highlight pre code[class*="language-shell"]::before,
+.highlight pre code[class*="language-bash"]::before,
+.highlight pre code[class*="language-sh"]::before {
+  content: "shell";
+  background: #4eaa25;
+  color: #ffffff;
+}
+
+.highlight pre code[class*="language-md"]::before,
+.highlight pre code[class*="language-markdown"]::before {
+  content: "markdown";
+  background: #083fa1;
+  color: #ffffff;
+}
+
+.highlight pre code[class*="language-rust"]::before {
+    content: "rust";
+    background: #ce422b;
+    color: #ffffff;
+}
+
+.highlight pre code[class*="language-cpp"]::before,
+.highlight pre code[class*="language-c++"]::before {
+  content: "c++";
+  background: #00599c;
+  color: #ffffff;
+}
+
+.highlight pre code[class*="language-fortran"]::before {
+  content: "fortran";
+  background: #4d41b1;
+  color: #ffffff;
+}
+
+.highlight pre code[class*="language-elisp"]::before,
+.highlight pre code[class*="language-emacs-lisp"]::before {
+  content: "elisp";
+  background: #7f5ab6;
+  color: #ffffff;
+}
+
+.highlight pre code[class="language-tex"]::before {
+    content: "latex";   /* display "latex" even though the class is "tex" */
+    background: #008080;
+    color: #ffffff;
+}
+
+.highlight pre code[class="language-text"]::before {
+    content: "text";
+    background: #888888;
+    color: #ffffff;
+}
+
+
 /* This is for small screen devices, e.g. phones */
 @media only screen and (max-width: 750px) {
     .site-name {
