@@ -137,8 +137,9 @@ blockquote::after {
 }
 
 code {
-  font-weight:inherit;
-  font-family:var(--mono-font-stack)
+    font-weight:inherit;
+    background-color: var(--code-bg-color);
+    font-family:var(--mono-font-stack)
 }
 code::after,
 code::before {
