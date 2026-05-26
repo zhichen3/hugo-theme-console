@@ -146,6 +146,7 @@ code::before {
   content:"`";
   display:inline
 }
+
 pre code::after,
 pre code::before {
   content:""
@@ -165,7 +166,6 @@ pre code {
   overflow-x:scroll;
   padding:0;
   margin:0;
-  display:inline-block;
   min-width:100%;
   font-family:var(--mono-font-stack);
 }
