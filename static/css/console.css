@@ -325,8 +325,7 @@ figure {
   text-decoration-thickness: 2px;
 }
 
-li,
-li>ul>li {
+li{
   position:relative;
   display: list-item;
   padding-left:calc(var(--global-space) * 0.5)
@@ -334,6 +333,15 @@ li>ul>li {
 
 ul {
   padding-left: 1rem;
+}
+
+ol {
+  padding-left: 2rem;
+}
+
+ol ol, ul ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* custom html attribute to do file copy using ox-hugo reference

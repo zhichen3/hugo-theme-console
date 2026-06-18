@@ -197,39 +197,12 @@ blockquote::after {
     opacity:0
   }
 }
-nav>ul>li {
-  padding-left:0
-}
-li::after {
-  position:absolute;
-  top:0;
-  left:0
-}
-nav ul>li::after {
-  content:""
-}
-ol li::before {
-  content:counters(item,".")". ";
-  counter-increment:item
-}
-ol ol li::before {
-  content:counters(item,".")" ";
-  counter-increment:item
-}
+
 .terminal-menu li::after,
 .terminal-menu li::before {
   display:none
 }
-ol {
-  counter-reset:item
-}
-ol li:nth-child(n+10)::after {
-  left:-7px
-}
-ol ol {
-  margin-top:0;
-  margin-bottom:0
-}
+
 .terminal-menu {
   width:100%
 }
@@ -238,10 +211,7 @@ ol ol {
   flex-direction:column;
   align-items:flex-start
 }
-ul ul {
-  margin-top:0;
-  margin-bottom:0
-}
+
 .terminal-menu ul {
   list-style-type:none;
   padding:0!important;
