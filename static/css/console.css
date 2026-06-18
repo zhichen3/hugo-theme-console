@@ -307,6 +307,35 @@ figure {
     content: none;
 }
 
+/* setting for ox-hugo toc */
+.ox-hugo-toc.toc {
+  border: 2px solid black;
+  padding: 1rem 4rem 0.5rem 4rem;
+  width: 90%;
+  box-sizing: border-box;
+  border-radius: 1px;
+  display: block;
+  margin: 1rem auto 2rem auto;
+}
+.ox-hugo-toc.toc .heading{
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  text-decoration-thickness: 2px;
+}
+
+li,
+li>ul>li {
+  position:relative;
+  display: list-item;
+  padding-left:calc(var(--global-space) * 0.5)
+}
+
+ul {
+  padding-left: 1rem;
+}
+
 /* custom html attribute to do file copy using ox-hugo reference
  Basically stops image from showing up*/
 .resource-copy {

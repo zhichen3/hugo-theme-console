@@ -59,6 +59,7 @@ em {
   font-family:var(--font-stack);
   color:var(--font-color)
 }
+
 blockquote,
 code,
 em,
@@ -92,7 +93,7 @@ p,
 ul,
 .logo {
   margin-top:calc(var(--global-space) * 2);
-  margin-bottom:calc(var(--global-space) * 2)
+  margin-bottom:calc(var(--global-space) * 2);
 }
 h1,
 .logo {
@@ -196,12 +197,6 @@ blockquote::after {
     opacity:0
   }
 }
-li,
-li>ul>li {
-  position:relative;
-  display:block;
-  padding-left:calc(var(--global-space) * 2)
-}
 nav>ul>li {
   padding-left:0
 }
@@ -209,9 +204,6 @@ li::after {
   position:absolute;
   top:0;
   left:0
-}
-ul>li::after {
-  content:"-"
 }
 nav ul>li::after {
   content:""
